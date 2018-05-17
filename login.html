@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>tianmao</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/other.css">
+	
+	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdn.bootcss.com/jquery-cookie/1.2.0/jquery.cookie.js"></script>
+	</head>
+<body>
+	<div class="loginheader">
+		<div class="loginheader-bd">
+			<img class="logo" src="https://img.alicdn.com/tfs/TB1_Gn8RXXXXXXqaFXXXXXXXXXX-380-54.png" />
+		</div>
+		
+	</div>
+	<div id="content">
+		
+		<div id="login-box">
+			<div class="way lg-account">
+				<div class="lg-tip">
+					<h4>密码登录</h4>
+					<p>
+						<i class="iconfont sd-icon">&#xe64e;</i>
+						扫码登录更方便
+						<b class="triangle outer"></b>
+						<span class="triangle inner"></span>
+					</p>
+					<i class="iconfont way-icon">&#xe64a;</i>
+				</div>
+				<form id="account-form" method="post">
+					<div>
+						<label for="username"><i class="iconfont">&#xe649;</i></label>
+						<input type="text" name="username" id="username" placeholder="手机号/会员名/邮箱">
+						<i id="clear-icon" class="iconfont">&#xe65b;</i>
+					</div>
+					<div>
+						<label for="password"><i class="iconfont">&#xe64c;</i></label>
+						<input type="password" name="password" id="password">
+					</div>
+					<input type="button" id="lg-btn" name="submit" value="登 录">
+					<input type="hidden" name="submitted" value="true">
+				</form>
+				<p class="lg-links">
+					<a href="forgot_pass.html">忘记密码</a>
+					<a href="register.html">免费注册</a>
+				</p>
+				<input type="checkbox" id="rememberpass"/>自动登入
+			</div>
+			<div class="way lg-qrcode">
+				<div class="lg-tip">
+					<h4>扫码登录，防止盗号</h4>
+					<i class="iconfont way-icon">&#xe64b;</i>
+				</div>
+				<div class="qrcode-err">
+					<p>二维码已失效</p>
+					<a id="fresh" href="#">请点击刷新</a>
+				</div>
+				<div class="qrcode-main">
+					<img id="qrcode" src="https://img.alicdn.com/tfscom/TB16jAMrnJYBeNjy1zewu1hzVXa.png" alt="二维码">
+					
+				</div>
+				<div class="qrcode-desc clear">
+					<i class="iconfont">&#xe650;</i>
+					<p>
+						打开 <a href="#">手机天猫</a> | <a href="#">手机淘宝</a><br>
+						扫一扫登录
+					</p>
+				</div>
+				<p class="lg-links">
+					<a id="tab-way" href="#">账号密码登录</a>
+					<a href="register.html">免费注册</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="log-footer">
+		<img src="images/bottom.png"/>
+	</div>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	
+</body>
+</html>

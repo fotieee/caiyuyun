@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/other.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/parabola.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.2.0/jquery.cookie.js"></script>
+	</head>
+	<body>
+		<!--右边固定的导航栏-->
+		<div class="right-ss">
+			<div class="right-ss-top">
+				<a href="#"><i class="iconfont tip-icon default"></i></a>
+			</div>
+			<div id="buycay" class="right-ss-buy">
+				<a href="">
+					<i class="iconfont tip-icon"></i>
+					购<br>
+					物<br>
+					车
+				</a>
+			</div>
+			<div class="right-ss-money">
+				<a href="#"><i class="iconfont tip-icon"></i></a>
+				<a href="#"><i class="iconfont tip-icon"></i></a>
+				<a href="#"><i class="iconfont tip-icon"></i></a>
+				<a href="#">
+					<i class="iconfont tip-icon"></i>
+				</a>
+				<a href=""><i class="iconfont tip-icon"></i></a>
+			</div>
+			<div class="right-ss-bottom">
+				<a href=""><i class="iconfont tip-icon"></i></a>
+				<a href=""><i class="iconfont tip-icon"></i></a>
+				<a href=""><i class="iconfont tip-icon"></i></a>
+			</div>
+		</div>
+		<!--头部导航-->
+		<div class="site-nav">
+			<div class="bleft">
+				<div class="wrap">
+					<p class="login">
+						<em>喵，欢迎来到天猫</em>
+						<a href="#">请登录</a>
+						<a href="#">免费注册</a>
+					</p>
+					<p class="sign">
+						<em>Hi,<span></span></em>
+						<a class="vip-name" href="#"><i class="iconfont sn-icon">&#xe60f;</i></a>
+						<a href="login.html" target="_top">积分<span class="score count"></span></a>
+						<a href="register.html" target="_top">消息<span id="message" class="count"></span></a>
+						<a href="php/logout.php">退出</a>
+					</p>
+					<ul class="qucik-menu">
+						<li class="sen-mytaobao">
+							<a href="#">
+								我的淘宝
+								<b class="triangle "></b>
+							</a>
+							<ul>
+								<li><a href="#">已买到的宝贝</a></li>
+								<li><a href="#">已卖出的宝贝</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="#">
+							<i class="iconfont sn-icon">&#xe628;</i>
+								购物车
+							</a>
+						</li>
+						<li class="sen-favorite">
+							<a href="#">
+								收藏夹
+							<b class="triangle "></b>	
+							</a>
+							<ul>
+								<li><a href="">收藏的宝贝</a></li>
+								<li><a href="">收藏的店铺</a></li>
+							</ul>
+						</li>
+						<li class="sn-separator">|</li>
+						<li class="sen-ipphone">
+							<a href="#">
+								<i class="iconfont sn-icon">&#xe61d;</i>
+								手机版
+							</a>
+							<div class="squict"></div>
+						</li>
+						<li>
+							<a href="#">淘宝网</a>
+						</li>
+						
+						<li class="sen-zc">
+							<a href="">
+								商家支持
+								<b class="triangle "></b>
+							</a>
+							<ul class="zclist">
+								<li>
+									<h3>商家：</h3>
+									<a href="#" target="_top">商家中心</a>
+									<a href="#" target="_top">商家入驻</a>
+									<a href="#" target="_top">运营服务</a>
+									<a href="#" target="_top">商家品控</a>
+									<a href="#" target="_top">商家工具</a>
+									<a href="#" target="_top">商家规则</a>
+									<a href="#" target="_top">商家智库</a>
+									<a href="#" target="_top">喵言喵语</a>
+								</li>
+								<li>
+									<h3>帮助</h3>
+									<a href="#" target="_top">帮助中心</a>
+									<a href="">问商友</a> 
+								</li>
+							</ul>
+						</li>
+						<li class="sen-dh">
+							<a href="#">
+								<i class="iconfont sn-icon">&#xe613;</i>
+								网站导航
+								<b class="triangle "></b>
+							</a>
+							<div class="dh-submenu">
+								<div class="site-hot">
+									<h2>热点推荐 <span>Hot</span></h2>
+									<ul class="site-list">
+										<li><a href="#">天猫超市</a></li>
+										<li><a href="#">喵鲜生</a></li>
+										<li><a href="#">科技新品<i class="sn-sitemap-icon sn-sitemap-icon-new"></i></a></li>
+										<li><a href="#">女装新品<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">玩街</a></li>
+										<li><a href="#">内衣新品<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">试美妆</a></li>
+										<li><a href="#">运动新品</a></li>
+										<li><a href="#">时尚先生<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">精明妈咪</a></li>
+										<li><a href="#">吃乐会<i class="sn-sitemap-icon sn-sitemap-icon-new"></i></a></li>
+										<li><a href="#">企业采购</a></li>
+										<li><a href="#">会员积分</a></li>
+										<li><a href="#">天猫国际</a></li>
+									</ul>
+								</div>
+								<div class="site-market">
+									<h2>行业市场 <span>Market</span></h2>
+									<ul class="site-list">
+										<li><a href="#">美妆</a></li>
+										<li><a href="#">电器</a></li>
+										<li><a href="#">女装<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">男装<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">女鞋</a></li>
+										<li><a href="#">男鞋</a></li>
+										<li><a href="#">内衣<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">箱包</a></li>
+										<li><a href="#">运动</a></li>
+										<li><a href="#">母婴</a></li>
+										<li><a href="#">家装</a></li>
+										<li><a href="#">医药</a></li>
+										<li><a href="#">食品</a></li>
+										<li><a href="#">配饰<i class="sn-sitemap-icon sn-sitemap-icon-new"></i></a></li>
+										<li><a href="#">汽车</a></li>
+									</ul>
+								</div>
+								<div class="site-help">
+									<h2>
+										服务指南
+										<span>Help</span>
+									</h2>
+									<ul>
+										<li><a href="">帮助中心</a></li>
+										<li><a href="">品质保障 </a></li>
+										<li><a href="">特色服务</a></li>
+										<li><a href="">7天退换货</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		
+		<div class="wugu">
+			
+		</div>
+		<!--商品详情-->
+		
+		<div class="detatail-md clear">
+			<div class="fdj">
+				<div class="spic">
+					<img class="spicimg" src="https://img.alicdn.com/imgextra/i3/2931078658/TB1MazdhKGSBuNjSspbXXciipXa_!!0-item_pic.jpg_430x430q90.jpg" sid=1>
+					<div class="sf"></div>
+					<div class="bf">
+						<img class="bpci" src="https://img.alicdn.com/imgextra/i3/2931078658/TB1MazdhKGSBuNjSspbXXciipXa_!!0-item_pic.jpg">
+					</div>
+				</div>
+				<ul class="fdj-list">
+					<li>
+						<a href="javascript:;">
+						<img src="https://img.alicdn.com/imgextra/i3/2931078658/TB1MazdhKGSBuNjSspbXXciipXa_!!0-item_pic.jpg" alt="商品预览图">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+						<img src="https://img.alicdn.com/imgextra/i4/2931078658/TB20uHwhGmWBuNjy1XaXXXCbXXa-2931078658.jpg" alt="商品预览图">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+						<img src="https://img.alicdn.com/imgextra/i1/2931078658/TB2yGYphNWYBuNjy1zkXXXGGpXa_!!2931078658.jpg" alt="商品预览图">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+						<img src="https://img.alicdn.com/imgextra/i4/2931078658/TB2NDOChKuSBuNjSsplXXbe8pXa_!!2931078658.jpg" alt="商品预览图">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+						<img src="https://img.alicdn.com/imgextra/i2/2931078658/TB27QvrhHSYBuNjSspfXXcZCpXa_!!2931078658.jpg" alt="商品预览图">
+						</a>
+					</li>
+				</ul>
+			</div>
+		
+			<div class="commodit-show">
+						<div class="commodit-tittle">
+							<h2>Dickies拖鞋男2018新款夏天沙滩鞋防滑男士一字拖凉鞋透气韩版潮</h2>
+						</div>
+						<div class="commodit-price">
+							<div class="price-1">
+								<img height="16" src="//img.alicdn.com/tps/TB1okcBKVXXXXbBXVXXXXXXXXXX-116-32.png">满199减20,可跨店 <a id="J_guaGuaKaPc" target="_blank">去刮券</a>
+							</div>
+							<div class="price-2">
+								<span class="pp">价格</span>
+								<span class="pp2">¥ 999.00</span>
+							</div>
+							<div class="price-3 price-2">
+								<span class="pp">促销价</span>
+								<strong>¥ 599.00</strong>
+								
+							</div>
+						</div>
+						<div class="commodit-yun">
+							<span class="yunf">
+								运费
+							</span>
+							<span class="di">福建厦门至 杭州快递: 0.00</span>
+						</div>
+						<div class="commodit-sl">
+							<ul class="tm-ind-panel">
+		                 			<li class="tm-ind-item tm-ind-sellCount" data-label="月销量"><div class="tm-indcon"><span class="tm-label">月销量</span><span class="tm-count">9</span></div></li>
+		            				<li class="tm-ind-item tm-ind-reviewCount canClick tm-line3" id="J_ItemRates"><div class="tm-indcon"><span class="tm-label">累计评价</span><span class="tm-count">7485</span></div></li>
+		    						  <li class="tm-ind-item tm-ind-emPointCount" data-spm="1000988"><div class="tm-indcon"><a href="//vip.tmall.com/vip/index.htm" target="_blank"><span class="tm-label">送天猫积分</span><span class="tm-count">299</span></a></div></li>
+							</ul>
+						</div>
+						<div  class=" commodit-key">
+							<div class="tb-sku clear">
+								<dl class="tb-prop tm-sale-prop tm-clear clear">
+								<dt class="tb-metatit">尺码</dt>
+												<dd>
+										<ul data-property="尺码" class="tm-clear J_TSaleProp   clear  ">
+								<li data-value="20549:418624880">
+										<a href="#" role="button" tabindex="0">
+																<span>39</span>
+										</a>
+									</li>
+								    	<li data-value="20549:229418985">
+										<a href="#" role="button" tabindex="0">
+																		<span>40</span>
+										</a>
+									</li>
+								    <li data-value="20549:407396361">
+										<a href="#" role="button" tabindex="0">
+									<span>41</span>
+										</a>
+										</li>
+								    	<li data-value="20549:473680452">
+											<a href="#" role="button" tabindex="0">
+																<span>42</span>
+											</a>
+										</li>
+								    		<li data-value="20549:225078235">
+											<a href="#" role="button" tabindex="0">
+												<span>43</span>
+									</a>
+								</li>
+								    		<li data-value="20549:64797379">
+								<a href="#" role="button" tabindex="0">
+																<span>44</span>
+								</a>
+									</li>
+									<li data-value="20549:481222891">
+								<a href="#" role="button" tabindex="0">
+																<span>45</span>
+								</a>
+							</li>
+							</ul>
+					  	</dd>
+					  </dl>
+					<dl class="tb-prop tm-sale-prop tm-clear  clear tm-img-prop " data-spm-anchor-id="a220o.1000855.0.i1.1b6c16f6e6G9mi">
+												<dt class="tb-metatit">颜色分类</dt>
+												<dd>
+												<ul data-property="颜色分类" class="tm-clear J_TSaleProp tb-img   clear   ">
+					
+							  										<li data-value="1627207:3572220" title="金黄" class="tb-selected">
+								<a href="#" style="background:url(//img.alicdn.com/imgextra/TB19xewrb1YBuNjSszeL6SblFXa_40x40q90.jpg) center no-repeat;" role="button" tabindex="0" aria-label="
+																金黄
+								，已选择">
+																<span>金黄</span>
+								</a>
+							<i>已选中</i></li>
+								    														
+					
+					
+											
+							  										<li data-value="1627207:28336" title="棕色">
+								<a href="#" style="background:url(//img.alicdn.com/imgextra/TB11v1_i2iSBuNkSnhJL6TDcpXa_40x40q90.jpg) center no-repeat;" role="button" tabindex="0">
+																<span>棕色</span>
+								</a>
+							</li>
+								    														
+					
+					
+											
+							  										<li data-value="1627207:671452979" title="金黄（加绒）" class="tb-out-of-stock" style="display: none;">
+								<a href="#" style="background:url(//img.alicdn.com/imgextra/i1/2931078658/TB2tzLdbwvD8KJjSsplXXaIEFXa_!!2931078658.jpg_40x40q90.jpg) center no-repeat;" role="button" tabindex="0" aria-disabled="true">
+																<span>金黄（加绒）</span>
+								</a>
+							</li>
+								    							</ul>
+					  							</dd>
+					 </dl>
+																        										    				
+			
+					</dl>
+		    			                
+						    			
+		    
+		        		
+						<div class="commodit-joincart clear"></div>
+					</div>
+					
+							<div class="lookagain clear">
+								<span class="kk">
+									数量
+								</span>
+								<input type="text" name="" id="lookgin" value="1" />
+								<div class="fl ki">
+									<span class="addnum">+</span>
+									<span class="reducenum">-</span>
+								</div>
+								<div class="fl js">
+									<span>件</span>
+									<span class="kc">库存42件</span>
+								</div>
+							</div>
+						</div>
+						
+			
+				<div class="commodit-bbtn clear">
+					<a href="javascrpt:;" id="comm-buy">立即购买</a>
+					<a href="javascrpt:;" id="comm-jion">加入购物车</a>
+					<img id="boll" src="https://img.alicdn.com/imgextra/i3/2931078658/TB1MazdhKGSBuNjSspbXXciipXa_!!0-item_pic.jpg">
+		 		</div>
+			</div>
+	
+			<div class="detail-right-list">
+				<ul class="detail-right-list-mian">
+					<li>
+						<a href="">
+							<img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/TB18pv2e9tYBeNjSspaXXaOOFXa_!!0-item_pic.jpg_160x160q90.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/TB1azjfbnCWBKNjSZFtXXaC3FXa_!!0-item_pic.jpg_160x160q90.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/TB18pv2e9tYBeNjSspaXXaOOFXa_!!0-item_pic.jpg_160x160q90.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/TB1azjfbnCWBKNjSZFtXXaC3FXa_!!0-item_pic.jpg_160x160q90.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/TB18pv2e9tYBeNjSspaXXaOOFXa_!!0-item_pic.jpg_160x160q90.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/TB1azjfbnCWBKNjSZFtXXaC3FXa_!!0-item_pic.jpg_160x160q90.jpg">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+		<div id="">
+			<img src="images/detal.png">
+		</div>
+		<script src="js/details.js" type="text/javascript" charset="utf-8"></script>
+	</body>	 		
+</html>

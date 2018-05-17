@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>tianmao</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.2.0/jquery.cookie.js"></script>
+	</head>
+	<body>
+		<!--右边固定的导航栏-->
+		<div class="right-ss">
+			<div class="right-ss-top">
+				<a href="#"><i class="iconfont tip-icon default"></i></a>
+			</div>
+			<div class="right-ss-buy">
+				<a href="">
+					<i class="iconfont tip-icon"></i>
+					购<br>
+					物<br>
+					车
+				</a>
+			</div>
+			<div class="right-ss-money">
+				<a href="#"><i class="iconfont tip-icon"></i></a>
+				<a href="#"><i class="iconfont tip-icon"></i></a>
+				<a href="#"><i class="iconfont tip-icon"></i></a>
+				<a href="#">
+					<i class="iconfont tip-icon"></i>
+				</a>
+				<a href=""><i class="iconfont tip-icon"></i></a>
+			</div>
+			<div class="right-ss-bottom">
+				<a href=""><i class="iconfont tip-icon"></i></a>
+				<a href=""><i class="iconfont tip-icon"></i></a>
+				<a href=""><i class="iconfont tip-icon"></i></a>
+			</div>
+		</div>
+		<!--顶部固定的搜索框-->
+		<div class="fix-header">
+			<div class="wrap">
+				<div class="iconfont top-icon">
+				
+				</div>
+				<form class="top-form">
+					<input class="top-form-text" type="text" name="search-box" placeholder="搜索 天猫 商品/品牌/店铺" title="请输入搜索内容">
+					<input class="top-form-btn" type="submit" name="search-btn" value="搜索">
+				</form>
+			</div>
+		</div>	
+		<!--头部导航-->
+		<div class="site-nav">
+			<div class="bleft">
+				<div class="wrap">
+					<p class="login">
+						<em>喵，欢迎来到天猫</em>
+						<a href="login.html">请登录</a>
+						<a href="register.html">免费注册</a>
+					</p>
+					<p class="sign">
+						<em>Hi,<span class="sign-name"></span></em>
+						<a class="vip-name" href="#"><i class="iconfont sn-icon">&#xe60f;</i></a>
+						<a href="javascript:;" target="_top">积分<span class="score count"></span></a>
+						<a href="javascript:;" target="_top">消息<span id="message" class="count"></span></a>
+						<a class="sign-fasle" href="javascript:;">退出</a>
+					</p>
+					<ul class="qucik-menu">
+						<li class="sen-mytaobao">
+							<a href="#">
+								我的淘宝
+								<b class="triangle "></b>
+							</a>
+							<ul>
+								<li><a href="#">已买到的宝贝</a></li>
+								<li><a href="#">已卖出的宝贝</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="#">
+							<i class="iconfont sn-icon">&#xe628;</i>
+								购物车
+							</a>
+						</li>
+						<li class="sen-favorite">
+							<a href="#">
+								收藏夹
+							<b class="triangle "></b>	
+							</a>
+							<ul>
+								<li><a href="">收藏的宝贝</a></li>
+								<li><a href="">收藏的店铺</a></li>
+							</ul>
+						</li>
+						<li class="sn-separator">|</li>
+						<li class="sen-ipphone">
+							<a href="#">
+								<i class="iconfont sn-icon">&#xe61d;</i>
+								手机版
+							</a>
+							<div class="squict"></div>
+						</li>
+						<li>
+							<a href="#">淘宝网</a>
+						</li>
+						
+						<li class="sen-zc">
+							<a href="">
+								商家支持
+								<b class="triangle "></b>
+							</a>
+							<ul class="zclist">
+								<li>
+									<h3>商家：</h3>
+									<a href="#" target="_top">商家中心</a>
+									<a href="#" target="_top">商家入驻</a>
+									<a href="#" target="_top">运营服务</a>
+									<a href="#" target="_top">商家品控</a>
+									<a href="#" target="_top">商家工具</a>
+									<a href="#" target="_top">商家规则</a>
+									<a href="#" target="_top">商家智库</a>
+									<a href="#" target="_top">喵言喵语</a>
+								</li>
+								<li>
+									<h3>帮助</h3>
+									<a href="#" target="_top">帮助中心</a>
+									<a href="">问商友</a> 
+								</li>
+							</ul>
+						</li>
+						<li class="sen-dh">
+							<a href="#">
+								<i class="iconfont sn-icon">&#xe613;</i>
+								网站导航
+								<b class="triangle "></b>
+							</a>
+							<div class="dh-submenu">
+								<div class="site-hot">
+									<h2>热点推荐 <span>Hot</span></h2>
+									<ul class="site-list">
+										<li><a href="#">天猫超市</a></li>
+										<li><a href="#">喵鲜生</a></li>
+										<li><a href="#">科技新品<i class="sn-sitemap-icon sn-sitemap-icon-new"></i></a></li>
+										<li><a href="#">女装新品<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">玩街</a></li>
+										<li><a href="#">内衣新品<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">试美妆</a></li>
+										<li><a href="#">运动新品</a></li>
+										<li><a href="#">时尚先生<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">精明妈咪</a></li>
+										<li><a href="#">吃乐会<i class="sn-sitemap-icon sn-sitemap-icon-new"></i></a></li>
+										<li><a href="#">企业采购</a></li>
+										<li><a href="#">会员积分</a></li>
+										<li><a href="#">天猫国际</a></li>
+									</ul>
+								</div>
+								<div class="site-market">
+									<h2>行业市场 <span>Market</span></h2>
+									<ul class="site-list">
+										<li><a href="#">美妆</a></li>
+										<li><a href="#">电器</a></li>
+										<li><a href="#">女装<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">男装<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">女鞋</a></li>
+										<li><a href="#">男鞋</a></li>
+										<li><a href="#">内衣<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">箱包</a></li>
+										<li><a href="#">运动</a></li>
+										<li><a href="#">母婴</a></li>
+										<li><a href="#">家装</a></li>
+										<li><a href="#">医药</a></li>
+										<li><a href="#">食品</a></li>
+										<li><a href="#">配饰<i class="sn-sitemap-icon sn-sitemap-icon-new"></i></a></li>
+										<li><a href="#">汽车</a></li>
+									</ul>
+								</div>
+								<div class="site-help">
+									<h2>
+										服务指南
+										<span>Help</span>
+									</h2>
+									<ul>
+										<li><a href="">帮助中心</a></li>
+										<li><a href="">品质保障 </a></li>
+										<li><a href="">特色服务</a></li>
+										<li><a href="">7天退换货</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<!--头部主体-->
+		<div class="header">
+			<div class="wrap">
+				<h1 class="logo">
+					<a href="#"><img src="images/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png"/></a>
+				</h1>
+				<div class="search">
+					<form class="search-main">
+						<input class="search-test"  placeholder="搜索 天猫 商品/品牌/店铺" type="text"/>
+						<input class="search-btn" type="submit" value="搜索"/>
+						<!--智能搜索框-->
+						<!--<ul class="search-api">
+							<li>
+								<a target="_blank" href="#">
+									<span >ss</span>
+									<strong>ennheiser</strong>
+									<span class="count">约-0.13098882997635367个结果</span>
+								</a>
+							</li>
+							
+						</ul>-->
+					</form>
+					<ul class="search-list">
+						<li><a href="#">针织衫</a></li>
+						<li class="fen"><a href="#">连衣裙</a></li>
+						<li><a href="#">四件套</a></li>
+						<li class="fen"><a href="#">摄像头</a></li>
+						<li><a href="#">客厅灯</a></li>
+						<li><a href="#">口红</a></li>
+						<li class="fen"><a href="#">手机</a></li>
+						<li><a href="#">运动鞋</a></li>	
+						<li class="fen"><a href="#">牛奶</a></li>
+					</ul>
+				</div>
+				<div class="header-banner"></div>
+			</div>	
+		</div>
+		<!--主体-->
+		<div class="content">
+			<div id="content-nav">
+				<div class="nav-main">
+					<a href="#"><img src="https://img.alicdn.com/tfs/TB1ztBlaMMPMeJjy1XbXXcwxVXa-200-60.png"></a>
+					<a href="#"><img alt="" src="https://img.alicdn.com/tfs/TB1t5ObaBxRMKJjy0FdXXaifFXa-200-60.png"></a>
+					<a href="">天猫会员</a>
+					<a href="">电器城</a>
+					<a href="">喵鲜生</a>
+					<a href="">医药馆</a>
+					<a href="">营业厅</a>
+					<a href="">魅力惠</a>
+					<a href="">飞猪旅行</a>
+					<a href="">苏宁易购</a>
+				</div>
+			</div>
+			<div id="category">
+				<div class="category-content">
+					<div class="cg-title">
+						<i class="iconfont"></i>
+						<h2>商品分类</h2>
+					</div>
+					<ul class="cg-tab" id="cg-tab">
+						<li class="nav-item nav-item0" data-color="#e54077">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">女装/</a><a href="#">内衣</a>
+						</li>
+						<li class="nav-item nav-item1" data-color="#427def">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">男装/</a><a href="#">运动户外</a>
+						</li>
+						<li class="nav-item nav-item2" data-color="#6347ed">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">女鞋/</a><a href="#">男鞋/</a><a href="#">箱包</a>
+						</li>
+						<li class="nav-item nav-item3" data-color="#e54077">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">化妆品/</a><a href="#">个人护理</a>
+						</li>
+						<li class="nav-item nav-item4" data-color="#6347ed">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">腕表/</a><a href="#">珠宝饰品/</a><a href="#">眼镜</a>
+						</li>
+						<li class="nav-item nav-item5" data-color="#427def">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">手机/</a><a href="#">数码/</a><a href="#">电脑办公</a>
+						</li>
+						<li class="nav-item nav-item6" data-color="#fa5c5c">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">母婴玩具</a>
+						</li>
+						<li class="nav-item nav-item7" data-color="#f7a831">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">零食/</a><a href="#">进口食品/</a><a href="#">茶酒</a>
+						</li>
+						<li class="nav-item nav-item8" data-color="#f7a831">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">生鲜水果</a>
+						</li>
+						<li class="nav-item nav-item9" data-color="#427def">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">大家电/</a><a href="#">生活电器</a>
+						</li>
+						<li class="nav-item nav-item10" data-color="#dd2727">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">家具器材</a>
+						</li>
+						<li class="nav-item nav-item11" data-color="#427def">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">汽车/</a><a href="#">配件/</a><a href="#">用品</a>
+						</li>
+						<li class="nav-item nav-item12" data-color="#f7a831">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">家纺/</a><a href="#">家饰/</a><a href="#">鲜花</a>
+						</li>
+						<li class="nav-item nav-item13" data-color="#3bc7b0">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">医药保健</a>
+						</li>
+						<li class="nav-item nav-item14" data-color="#dd2727">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">厨具/</a><a href="#">收纳/</a><a href="#">宠物</a>
+						</li>
+						<li class="nav-item nav-item15" data-color="#3bc7b0">
+							<i class="iconfont nav-item-icon"></i>
+							<a href="#">图书音像</a>
+						</li>
+					</ul>
+				</div>
+				<!--数据生的3级导航-->
+				<!--<div class="category-sub">
+					<div class="detal-word">
+						<ul class="detal-l">
+							<li>
+								<h3>
+									<span>当季流行</span>
+									<i class="iconfont title-icon"></i>
+								</h3>
+								<div class="line-con">
+									<a class="highlight" href="#">女士新品</a>
+									<a href="#">短袖T恤</a>
+									<a class="highlight" href="#">时尚套装</a>
+									<a href="#">女装商场同款</a>
+									<a href="#">内衣夏季新品</a>
+									<a class="highlight" href="#">内衣商场同款</a>
+									<a href="#">睡衣套装</a>
+									<a class="highlight" href="#">情侣家居服</a>
+									<a href="#">丝袜</a>
+								</div>
+							</li>
+							<li>
+								<h3>
+									<span>当季流行</span>
+									<i class="iconfont title-icon"></i>
+								</h3>
+								<div class="line-con">
+									<a class="highlight" href="#">女士新品</a>
+									<a href="#">短袖T恤</a>
+									<a class="highlight" href="#">时尚套装</a>
+									<a href="#">女装商场同款</a>
+									<a href="#">内衣夏季新品</a>
+									<a class="highlight" href="#">内衣商场同款</a>
+									<a href="#">睡衣套装</a>
+									<a class="highlight" href="#">情侣家居服</a>
+									<a href="#">丝袜</a>
+								</div>
+							</li>
+							<li>
+								<h3>
+									<span>当季流行</span>
+									<i class="iconfont title-icon"></i>
+								</h3>
+								<div class="line-con">
+									<a class="highlight" href="#">女士新品</a>
+									<a href="#">短袖T恤</a>
+									<a class="highlight" href="#">时尚套装</a>
+									<a href="#">女装商场同款</a>
+									<a href="#">内衣夏季新品</a>
+									<a class="highlight" href="#">内衣商场同款</a>
+									<a href="#">睡衣套装</a>
+									<a class="highlight" href="#">情侣家居服</a>
+									<a href="#">丝袜</a>
+								</div>
+							</li>
+							<li>
+								<h3>
+									<span>当季流行</span>
+									<i class="iconfont title-icon"></i>
+								</h3>
+								<div class="line-con">
+									<a class="highlight" href="#">女士新品</a>
+									<a href="#">短袖T恤</a>
+									<a class="highlight" href="#">时尚套装</a>
+									<a href="#">女装商场同款</a>
+									<a href="#">内衣夏季新品</a>
+									<a class="highlight" href="#">内衣商场同款</a>
+									<a href="#">睡衣套装</a>
+									<a class="highlight" href="#">情侣家居服</a>
+									<a href="#">丝袜</a>
+								</div>
+							</li>
+							<li>
+								<h3>
+									<span>当季流行</span>
+									<i class="iconfont title-icon"></i>
+								</h3>
+								<div class="line-con">
+									<a class="highlight" href="#">女士新品</a>
+									<a href="#">短袖T恤</a>
+									<a class="highlight" href="#">时尚套装</a>
+									<a href="#">女装商场同款</a>
+									<a href="#">内衣夏季新品</a>
+									<a class="highlight" href="#">内衣商场同款</a>
+									<a href="#">睡衣套装</a>
+									<a class="highlight" href="#">情侣家居服</a>
+									<a href="#">丝袜</a>
+								</div>
+							</li>
+							<li>
+								<h3>
+									<span>当季流行</span>
+									<i class="iconfont title-icon"></i>
+								</h3>
+								<div class="line-con">
+									<a class="highlight" href="#">女士新品</a>
+									<a href="#">短袖T恤</a>
+									<a class="highlight" href="#">时尚套装</a>
+									<a href="#">女装商场同款</a>
+									<a href="#">内衣夏季新品</a>
+								
+								</div>
+							</li>
+							<li>
+								<h3>
+									<span>当季流行</span>
+									<i class="iconfont title-icon"></i>
+								</h3>
+								<div class="line-con">
+									<a class="highlight" href="#">女士新品</a>
+									<a href="#">短袖T恤</a>
+									<a class="highlight" href="#">时尚套装</a>
+									<a href="#">女装商场同款</a>
+									<a href="#">内衣夏季新品</a>
+									<a class="highlight" href="#">内衣商场同款</a>
+									<a href="#">睡衣套装</a>
+									<a class="highlight" href="#">情侣家居服</a>
+									<a href="#">丝袜</a>
+								</div>
+							</li>
+							<li>
+								<h3>
+									<span>当季流行</span>
+									<i class="iconfont title-icon"></i>
+								</h3>
+								<div class="line-con">
+									<a class="highlight" href="#">女士新品</a>
+									<a href="#">短袖T恤</a>
+									<a class="highlight" href="#">时尚套装</a>
+									<a href="#">女装商场同款</a>
+									<a href="#">内衣夏季新品</a>
+					
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="detal-logo clear">
+						<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+           				<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+           				<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+           				<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+           				<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+           				<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+           				<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+           				<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+           				<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+           				<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+           				<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+           				<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+           				<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+           				<a class="imglogo">
+               				 <img src="https://img.alicdn.com/bao/uploaded/TB1B_DcJpXXXXXWXFXXSutbFXXX.jpg_170x120q30.jpg">
+           				</a>
+					</div>
+				</div>-->
+				<!--数据生的3级导航end-->
+			</div>
+			<div class="banner-slide">
+			<!--数据生成的轮播图-->	
+			<!--<div class="bannerul">
+					<div class="banner-con">
+						<a href="#">
+							<img class="tanx-banner" src="https://aecpm.alicdn.com/simba/img/TB1_JXrLVXXXXbZXVXXSutbFXXX.jpg">
+						</a>
+						<a class="con-top">
+							<img alt="" src="https://img.alicdn.com/imgextra/i2/123/TB2rGVZqXuWBuNjSszbXXcS7FXa_!!123-2-lubanu.png_240x5000q100.jpg_.webp" > 
+						</a>
+						<a class="con-bottom">
+							<img alt="" src="https://img.alicdn.com/imgextra/i4/192/TB2oxeHqnlYBeNjSszcXXbwhFXa_!!192-2-lubanu.png_240x5000q100.jpg_.webp" > 
+						</a>
+					</div>
+					<div class="banner-con">
+						<a href="#">
+							<img class="tanx-banner" src="https://img.alicdn.com/tfs/TB1YKGzqeuSBuNjy1XcXXcYjFXa-1130-500.jpg_q100.jpg_.webp">
+						</a>
+						<a class="con-top">
+							<img alt="" src="https://img.alicdn.com/imgextra/i2/123/TB2rGVZqXuWBuNjSszbXXcS7FXa_!!123-2-lubanu.png_240x5000q100.jpg_.webp" > 
+						</a>
+						<a class="con-bottom">
+							<img alt="" src="https://img.alicdn.com/imgextra/i4/192/TB2oxeHqnlYBeNjSszcXXbwhFXa_!!192-2-lubanu.png_240x5000q100.jpg_.webp" > 
+						</a>
+					</div>
+					<div class="banner-con">
+						<a href="#">
+							<img class="tanx-banner" src="https://aecpm.alicdn.com/simba/img/TB1_JXrLVXXXXbZXVXXSutbFXXX.jpg">
+						</a>
+						<a class="con-top">
+							<img alt="" src="https://img.alicdn.com/imgextra/i2/123/TB2rGVZqXuWBuNjSszbXXcS7FXa_!!123-2-lubanu.png_240x5000q100.jpg_.webp" > 
+						</a>
+						<a class="con-bottom">
+							<img alt="" src="https://img.alicdn.com/imgextra/i4/192/TB2oxeHqnlYBeNjSszcXXbwhFXa_!!192-2-lubanu.png_240x5000q100.jpg_.webp" > 
+						</a>
+					</div>
+					<div class="banner-con">
+						<a href="#">
+							<img class="tanx-banner" src="https://img.alicdn.com/tps/i4/TB1w7s5ouGSBuNjSspbSuwiipXa.jpg">
+						</a>
+						<a class="con-top">
+							<img alt="" src="https://img.alicdn.com/imgextra/i2/123/TB2rGVZqXuWBuNjSszbXXcS7FXa_!!123-2-lubanu.png_240x5000q100.jpg_.webp" > 
+						</a>
+						<a class="con-bottom">
+							<img alt="" src="https://img.alicdn.com/imgextra/i4/192/TB2oxeHqnlYBeNjSszcXXbwhFXa_!!192-2-lubanu.png_240x5000q100.jpg_.webp" > 
+						</a>
+					</div>
+					<div class="banner-con">
+						<a href="#">
+							<img class="tanx-banner" src="https://aecpm.alicdn.com/simba/img/TB1_JXrLVXXXXbZXVXXSutbFXXX.jpg">
+						</a>
+						<a class="con-top">
+							<img alt="" src="https://img.alicdn.com/imgextra/i2/123/TB2rGVZqXuWBuNjSszbXXcS7FXa_!!123-2-lubanu.png_240x5000q100.jpg_.webp" > 
+						</a>
+						<a class="con-bottom">
+							<img alt="" src="https://img.alicdn.com/imgextra/i4/192/TB2oxeHqnlYBeNjSszcXXbwhFXa_!!192-2-lubanu.png_240x5000q100.jpg_.webp" > 
+						</a>
+					</div>
+					<div class="banner-con">
+						<a href="#">
+							<img class="tanx-banner" src="https://img.alicdn.com/tps/i4/TB1w7s5ouGSBuNjSspbSuwiipXa.jpg">
+						</a>
+						<a class="con-top">
+							<img alt="" src="https://img.alicdn.com/imgextra/i2/123/TB2rGVZqXuWBuNjSszbXXcS7FXa_!!123-2-lubanu.png_240x5000q100.jpg_.webp" > 
+						</a>
+						<a class="con-bottom">
+							<img alt="" src="https://img.alicdn.com/imgextra/i4/192/TB2oxeHqnlYBeNjSszcXXbwhFXa_!!192-2-lubanu.png_240x5000q100.jpg_.webp" > 
+						</a>
+					</div>
+				</div>-->
+			<!--数据生成的轮播图end-->		
+				<ol class="btn">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+			<div class="personal">
+				<div class="wrap personal-top clear">
+					<div class="per-line"></div>
+					<div class="per-text">
+						<img src="images/incon.png">
+						你的专属活动
+					</div>
+					<div class="per-line"></div>
+					<div class="per-img clear">
+						<a href=""><img src="https://img.alicdn.com/tfs/TB1MDj3qb5YBuNjSspoXXbeNFXa-476-260.jpg_240x5000q100.jpg_.webp" alt="" /></a>
+						<a href=""><img src="https://img.alicdn.com/imgextra/i3/52660971/TB2CtfWfnmWBKNjSZFBXXXxUFXa_!!52660971.jpg_240x5000q100.jpg_.webp" alt="" /></a>
+						<a href=""><img src="https://img.alicdn.com/tfs/TB13rRJqFGWBuNjy0FbXXb4sXXa-476-260.jpg_240x5000q100.jpg_.webp" alt="" /></a>
+						<a href=""><img src="https://img.alicdn.com/tfs/TB1fImjqGmWBuNjy1XaXXXCbXXa-476-260.png_240x5000q100.jpg_.webp" alt="" /></a>
+						<a href=""><img src="https://img.alicdn.com/tfs/TB1fImjqGmWBuNjy1XaXXXCbXXa-476-260.png_240x5000q100.jpg_.webp"/></a>
+					</div>
+					<div class="pre-brand-save">
+						<div class="left">
+							<h4>
+								<span class="brand">品牌闪购</span>
+								<span class="save">BRAND SALE</span>
+								<a class="more" href="#">
+									<img  src="images/TB1B7RoaMMPMeJjy1XcXXXpppXa-36-36.png">
+								</a>
+							</h4>
+							<a href="">
+									<img class="left-img" src="https://img.alicdn.com/tfs/TB19JYWpb5YBuNjSspoXXbeNFXa-468-644.jpg_320x5000q100.jpg_.webp">
+							</a>
+						</div>
+						<div class="mid left">
+							<h4>
+								<span class="brand">品牌闪购</span>
+								<span class="save">BRAND SALE</span>
+								<a class="more" href="#">
+									<img  src="images/TB1B7RoaMMPMeJjy1XcXXXpppXa-36-36.png">
+								</a>
+							</h4>
+							<a href="">
+									<img class="left-img" src="https://img.alicdn.com/imgextra/i2/2924318589/TB2FnLhgjlxYKJjSZFuXXaYlVXa_!!2924318589.jpg_490x490q100.jpg_.webp">
+							</a>
+						</div>
+						<div class="mid left">
+							<h4>
+								<span class="brand">品牌闪购</span>
+								<span class="save">BRAND SALE</span>
+								<a class="more" href="#">
+									<img  src="images/TB1B7RoaMMPMeJjy1XcXXXpppXa-36-36.png">
+								</a>
+							</h4>
+							<a href="">
+									<img class="left-img" src="http://img.alicdn.com/tps/i4/TB1v_GUppuWBuNjSspnSut1NVXa.jpg_490x490q100.jpg_.webp">
+							</a>
+						</div>
+					</div>
+					<!--数据导入生成logo-->
+					<!--<div class="big-logo">
+						<div class="wrap">
+							<ul class="biglogo-list clear">
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li><li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://img.alicdn.com/i2/2/TB1dDNYlkfb_uJjSsrbXXb6bVXa?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B8&acm=09042.1003.1.735125&scm=1007.13029.56634.100200300000000_100x150q100.jpg_.webp">
+									</a>
+									<div class="fliter">
+										<p class="logo-name">Adidas/阿迪达斯</p>
+										<p class="btn-enter"><span>点击进入</span></p>
+									</div>
+								</li>
+								<li class=" biglogo-last">
+									<a href="#">
+										<i class="iconfont rotate-icon"></i>
+										<span>换一批</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>-->
+					<!--数据导入生成logoend-->
+				</div>	
+			</div>
+			<div class="showgoods">
+				<div class="wrap">
+					<!--天猫超市活动页面-->
+					<!--<div class="tm-shop">
+						<div class="shop-header clear">
+							<a class="cs" href=""><img src="https://img.alicdn.com/tfs/TB1Q67hXPihSKJjy0FeXXbJtpXa-428-50.png"></a>
+							<ul class="shop-nav">
+								<li><a href="">进口食品</a></li>
+								<li><a href="">食品饮料</a></li>
+								<li><a href="">粮油副食</a></li>
+								<li><a href="">美容洗护</a></li>
+								<li><a href="">家居家电</a></li>
+								<li><a href="">家庭清洁</a></li>
+								<li><a href="">母婴用品</a></li>
+								<li><a href=""> 生鲜水果</a></li>
+							</ul> 
+						</div>
+						<div class="shop-bd clear">
+							 <div class="shop-left">
+							 	<a class='modulebig' href="#">
+							 		
+							 		<img src="https://img.alicdn.com/tps/i4/TB1Dt6lhh6I8KJjSszfSuuZVXXa.jpg">
+							 		<div class="chihuo">
+							 			<p>天猫超市</p>
+							 			<p>吃货提前嗨买二免一</p>
+							 		</div>
+							 		<img class="more" src="images/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png">
+							 	</a>
+							 </div>
+							 <div class="shop-right">
+							 	<ul class="shop-right-show">
+							 		<li class="big">
+								 		<div class="contiane">									 				
+								 			<div class="c1">
+									 			<div class="big-header">
+									 				<a class="btn1 hover">今日量抢</a>
+									 				<a class="btn1">量贩装</a>
+									 			</div>
+									 			<div class="big-bttom">
+									 				<div class="arrow">
+									 					<div class="tittle">
+									 						<img src="https://img.alicdn.com/tfs/TB12RqQewMPMeJjy1XdXXasrXXa-23-23.png" />
+									 						限时限量疯抢
+									 					</div>
+									 					<div class="text">
+									 						一元超值疯狂抢购
+									 					</div>
+									 				</div>
+									 				<img class="item-img" src="https://gw.alicdn.com/tfs/TB13hqjqamWBuNjy1XaXXXCbXXa-400-400.jpg">
+									 			</div>
+								 			</div>
+								 			<div class="c2">
+									 			<div class="big-header">
+									 				<a class="btn1 ">今日量抢</a>
+									 				<a class="btn1 hover">量贩装</a>
+									 			</div>
+									 			<div class="big-bttom">
+									 				<div class="arrow">
+									 					<div class="tittle">
+									 						<img src="https://img.alicdn.com/tfs/TB12RqQewMPMeJjy1XdXXasrXXa-23-23.png" />
+									 						安慕希原味酸奶
+									 					</div>
+									 					<div class="text">
+									 						限时第二杯半价
+									 					</div>
+									 				</div>
+									 				<img class="item-img" src="https://img.alicdn.com/tfs/TB1YzZ5leGSBuNjSspbXXciipXa-400-400.jpg">
+									 			</div>
+								 			</div>
+								 		</div>	
+							 		</li>
+							 		<li>
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-mr">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-mr no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 	</ul>
+							 </div>
+							 
+							 
+						</div>
+					</div>-->
+					<!--end-->
+					<!--天猫国际-->
+					<!--<div class="tm-shop">
+						<div class="shop-header clear">
+							<a class="cs" href=""><img src="https://img.alicdn.com/tfs/TB1R.slXGagSKJjy0FgXXcRqFXa-428-50.png"></a>
+							<ul class="shop-nav">
+								<li><a href="">口红</a></li>
+								<li><a href="">YSL</a></li>
+								<li><a href="">面膜</a></li>
+								<li><a href="">防晒</a></li>
+								<li><a href="">迪奥</a></li>
+							
+							</ul> 
+						</div>
+						<div class="shop-bd clear">
+							 <div class="shop-left">
+							 	<a class="modulebig modulebig1" href="#">
+							 		
+							 		<img src="https://img.alicdn.com/tps/i4/TB14MdIfaAoBKNjSZSySuuHAVXa.jpg">
+							 		<div class="chihuo">
+							 			<p>天猫超市</p>
+							 			<p>吃货提前嗨买二免一</p>
+							 		</div>
+							 		<img class="more" src="images/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png">
+							 	</a>
+							 	<a class="modulebig modulebig2" href="#">
+							 		
+							 		<img src="https://img.alicdn.com/tps/i4/TB14MdIfaAoBKNjSZSySuuHAVXa.jpg">
+							 		<div class="chihuo">
+							 			<p>天猫超市</p>
+							 			<p>吃货提前嗨买二免一</p>
+							 		</div>
+							 		<img class="more" src="images/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png">
+							 	</a>
+							 </div>
+							 <div class="shop-right">
+							 	<ul class="shop-right-show">
+							 		<li>
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li>
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li>
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-mr">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-mr no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 	</ul>
+							 </div>
+						</div>
+					</div>-->
+					<!--end-->
+					<!--插播广告横条-->
+					<!--<div class="show-ht">
+						<img src="https://img.alicdn.com/simba/img/TB1V5nzkYSYBuNjSspfSuwZCpXa.jpg" width="1620" height="90">
+					</div>
+					<!--end-->
+					<!--美丽人生-->
+					<!--<div class="tm-shop">
+						<div class="shop-header clear">
+							<a class="cs" href=""><img src="https://img.alicdn.com/tfs/TB1Q67hXPihSKJjy0FeXXbJtpXa-428-50.png"></a>
+							<ul class="shop-nav">
+								<li><a href="">进口食品</a></li>
+								<li><a href="">食品饮料</a></li>
+								<li><a href="">粮油副食</a></li>
+								<li><a href="">美容洗护</a></li>
+								<li><a href="">家居家电</a></li>
+								<li><a href="">家庭清洁</a></li>
+								<li><a href="">母婴用品</a></li>
+								<li><a href=""> 生鲜水果</a></li>
+							</ul> 
+						</div>
+						<div class="shop-bd clear">
+							 <div class="shop-left">
+							 	<a class="modulebig" href="#">
+							 		
+							 		<img src="https://img.alicdn.com/tps/i4/TB14MdIfaAoBKNjSZSySuuHAVXa.jpg">
+							 		<div class="chihuo">
+							 			<p>天猫超市</p>
+							 			<p>吃货提前嗨买二免一</p>
+							 		</div>
+							 		<img class="more" src="images/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png">
+							 	</a>
+							 	
+							 </div>
+							 <div class="shop-right">
+							 	<ul class="shop-right-show">
+							 		<li>
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li>
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li>
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-mr">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-mr no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 	</ul>
+							 </div>
+						</div>
+					</div>
+					<!--end-->
+					<!--潮店酷玩-->
+					<!--<div class="tm-shop">
+						<div class="shop-header clear">
+							<a class="cs" href=""><img src="https://img.alicdn.com/tfs/TB1Q67hXPihSKJjy0FeXXbJtpXa-428-50.png"></a>
+							<ul class="shop-nav">
+								<li><a href="">进口食品</a></li>
+								<li><a href="">食品饮料</a></li>
+								<li><a href="">粮油副食</a></li>
+								<li><a href="">美容洗护</a></li>
+								<li><a href="">家居家电</a></li>
+								<li><a href="">家庭清洁</a></li>
+								<li><a href="">母婴用品</a></li>
+								<li><a href=""> 生鲜水果</a></li>
+							</ul> 
+						</div>
+						<div class="shop-bd clear">
+							 <div class="shop-left">
+							 	<a class="modulebig" href="#">
+							 		
+							 		<img src="https://img.alicdn.com/tps/i4/TB14MdIfaAoBKNjSZSySuuHAVXa.jpg">
+							 		<div class="chihuo">
+							 			<p>天猫超市</p>
+							 			<p>吃货提前嗨买二免一</p>
+							 		</div>
+							 		<img class="more" src="images/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png">
+							 	</a>
+							 	
+							 </div>
+							 <div class="shop-right">
+							 	<ul class="shop-right-show">
+							 		<li>
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li>
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li>
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-mr">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-mr no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 	</ul>
+							 </div>
+						</div>
+					</div>
+					<!---end-->
+					<!--<div class="show-ht">
+						<img src="https://img.alicdn.com/simba/img/TB1V5nzkYSYBuNjSspfSuwZCpXa.jpg" width="1620" height="90">
+					</div>
+					<!--最后-->
+					<!--<div class="tm-shop">
+						<div class="shop-header clear">
+							<a class="cs" href=""><img src="https://img.alicdn.com/tfs/TB1Q67hXPihSKJjy0FeXXbJtpXa-428-50.png"></a>
+							<ul class="shop-nav">
+								<li><a href="">进口食品</a></li>
+								<li><a href="">食品饮料</a></li>
+								<li><a href="">粮油副食</a></li>
+								<li><a href="">美容洗护</a></li>
+								<li><a href="">家居家电</a></li>
+								<li><a href="">家庭清洁</a></li>
+								<li><a href="">母婴用品</a></li>
+								<li><a href=""> 生鲜水果</a></li>
+							</ul> 
+						</div>
+						<div class="shop-bd clear">
+							 <div class="shop-left">
+							 	<a class="modulebig" href="#">
+							 		
+							 		<img src="https://img.alicdn.com/tps/i4/TB14MdIfaAoBKNjSZSySuuHAVXa.jpg">
+							 		<div class="chihuo">
+							 			<p>天猫超市</p>
+							 			<p>吃货提前嗨买二免一</p>
+							 		</div>
+							 		<img class="more" src="images/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png">
+							 	</a>
+							 	
+							 </div>
+							 <div class="shop-right">
+							 	<ul class="shop-right-show">
+							 		<li>
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li>
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li>
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-mr">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 		<li class="no-mr no-bo">
+							 			<div class="contiane">
+							 				<img class="floor-img" src="https://gw.alicdn.com/bao/uploaded/i3/1014281128/TB1R6sNfpuWBuNjSszbXXcS7FXa_!!0-item_pic.jpg">
+							 				<p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+							 				<p class="floor-price">￥1099</p>
+							 			</div>
+							 		</li>
+							 	</ul>
+							 </div>
+						</div>
+					</div>-->
+					
+						
+					<!--end-->
+				</div>
+				
+			</div>
+			<!--end-->
+			<div class="likes">
+				<div class="wrap">
+					<h3 class="h">
+						<span class="text-line">——</span>
+						<i class="iconfont"></i>
+						猜你喜欢
+						<span class="text-line">——</span>
+					</h3>
+					
+					
+				<div class="likes-goods">
+						<ul class="likes-goods-ul clear">
+							<!--<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>
+							<li>
+								<div class="contiane goods-mo">
+									 <img class="floor-img" src="http://img.alicdn.com/bao/uploaded/bao/upload/TB1feYIcnqWBKNjSZFxwu3pLpXa.png_400x400q60.jpg">
+									 <p class="floor-show">【天猫超市】Midea/美的 BCD-158DKM(E)冷藏冷冻节能家用双温冰柜</p>
+									 <p class="floor-price">￥1099</p>
+								</div>
+							</li>-->
+						</ul>
+						
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!--footer-->
+		<div class="footer">
+			<div class="wrap">
+				<img src="images/footer_02.png">
+			</div>
+			
+		</div>
+		<!--左边的楼梯导航-->
+		<div class="louti">
+			<ul id="floor-nav">
+				<li class="nav-header hover">导航</li>
+				<li><a href="#floor-QZSG" data-color="#f7a945" >亲子时光</a></li>
+				<li><a href="#floor-HWCX" data-color="#19c8a9" >户外出行</a></li>
+				<li><a href="#floor-DZAC" data-color="#f15453" >打造爱巢</a></li>
+				<li><a href="#floor-JJSH" data-color="#64c333" >居家生活</a></li>
+				<li><a href="#floor-CDKW" data-color="#0aa6e8" >潮店酷玩</a></li>
+
+				<li><a href="#floor-QJD" data-color="#dd2727" >品牌旗舰</a></li>
+				<li><a href="#floor-CNXH" >猜你喜欢</a></li>
+				<li class="nav-back"><a href="#site-nav"><i class="iconfont"></i>顶部</a></li>
+			</ul>
+		</div>
+		
+		<script src="js/text.js" type="text/javascript" id="cd" charset="utf-8"></script>
+	</body>
+</html>

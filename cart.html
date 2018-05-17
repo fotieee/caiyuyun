@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>	
+		<link rel="stylesheet" type="text/css" href="css/other.css"/>
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.2.0/jquery.cookie.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="site-nav">
+			<div class="bleft">
+				<div class="wrap">
+					<p class="login">
+						<em>喵，欢迎来到天猫</em>
+						<a href="#">请登录</a>
+						<a href="#">免费注册</a>
+					</p>
+					<p class="sign">
+						<em>Hi,<span></span></em>
+						<a class="vip-name" href="#"><i class="iconfont sn-icon">&#xe60f;</i></a>
+						<a href="login.html" target="_top">积分<span class="score count"></span></a>
+						<a href="register.html" target="_top">消息<span id="message" class="count"></span></a>
+						<a href="php/logout.php">退出</a>
+					</p>
+					<ul class="qucik-menu">
+						<li class="sen-mytaobao">
+							<a href="#">
+								我的淘宝
+								<b class="triangle "></b>
+							</a>
+							<ul>
+								<li><a href="#">已买到的宝贝</a></li>
+								<li><a href="#">已卖出的宝贝</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="#">
+							<i class="iconfont sn-icon">&#xe628;</i>
+								购物车
+							</a>
+						</li>
+						<li class="sen-favorite">
+							<a href="#">
+								收藏夹
+							<b class="triangle "></b>	
+							</a>
+							<ul>
+								<li><a href="">收藏的宝贝</a></li>
+								<li><a href="">收藏的店铺</a></li>
+							</ul>
+						</li>
+						<li class="sn-separator">|</li>
+						<li class="sen-ipphone">
+							<a href="#">
+								<i class="iconfont sn-icon">&#xe61d;</i>
+								手机版
+							</a>
+							<div class="squict"></div>
+						</li>
+						<li>
+							<a href="#">淘宝网</a>
+						</li>
+						
+						<li class="sen-zc">
+							<a href="">
+								商家支持
+								<b class="triangle "></b>
+							</a>
+							<ul class="zclist">
+								<li>
+									<h3>商家：</h3>
+									<a href="#" target="_top">商家中心</a>
+									<a href="#" target="_top">商家入驻</a>
+									<a href="#" target="_top">运营服务</a>
+									<a href="#" target="_top">商家品控</a>
+									<a href="#" target="_top">商家工具</a>
+									<a href="#" target="_top">商家规则</a>
+									<a href="#" target="_top">商家智库</a>
+									<a href="#" target="_top">喵言喵语</a>
+								</li>
+								<li>
+									<h3>帮助</h3>
+									<a href="#" target="_top">帮助中心</a>
+									<a href="">问商友</a> 
+								</li>
+							</ul>
+						</li>
+						<li class="sen-dh">
+							<a href="#">
+								<i class="iconfont sn-icon">&#xe613;</i>
+								网站导航
+								<b class="triangle "></b>
+							</a>
+							<div class="dh-submenu">
+								<div class="site-hot">
+									<h2>热点推荐 <span>Hot</span></h2>
+									<ul class="site-list">
+										<li><a href="#">天猫超市</a></li>
+										<li><a href="#">喵鲜生</a></li>
+										<li><a href="#">科技新品<i class="sn-sitemap-icon sn-sitemap-icon-new"></i></a></li>
+										<li><a href="#">女装新品<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">玩街</a></li>
+										<li><a href="#">内衣新品<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">试美妆</a></li>
+										<li><a href="#">运动新品</a></li>
+										<li><a href="#">时尚先生<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">精明妈咪</a></li>
+										<li><a href="#">吃乐会<i class="sn-sitemap-icon sn-sitemap-icon-new"></i></a></li>
+										<li><a href="#">企业采购</a></li>
+										<li><a href="#">会员积分</a></li>
+										<li><a href="#">天猫国际</a></li>
+									</ul>
+								</div>
+								<div class="site-market">
+									<h2>行业市场 <span>Market</span></h2>
+									<ul class="site-list">
+										<li><a href="#">美妆</a></li>
+										<li><a href="#">电器</a></li>
+										<li><a href="#">女装<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">男装<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">女鞋</a></li>
+										<li><a href="#">男鞋</a></li>
+										<li><a href="#">内衣<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+										<li><a href="#">箱包</a></li>
+										<li><a href="#">运动</a></li>
+										<li><a href="#">母婴</a></li>
+										<li><a href="#">家装</a></li>
+										<li><a href="#">医药</a></li>
+										<li><a href="#">食品</a></li>
+										<li><a href="#">配饰<i class="sn-sitemap-icon sn-sitemap-icon-new"></i></a></li>
+										<li><a href="#">汽车</a></li>
+									</ul>
+								</div>
+								<div class="site-help">
+									<h2>
+										服务指南
+										<span>Help</span>
+									</h2>
+									<ul>
+										<li><a href="">帮助中心</a></li>
+										<li><a href="">品质保障 </a></li>
+										<li><a href="">特色服务</a></li>
+										<li><a href="">7天退换货</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div class="ooo">
+			<img src="images/cart.png"/>
+		</div>
+		<div class="catr-main">
+			<div class="cart-header">
+				<div class="allselect">
+					<div class="checketbox">
+						
+					</div>
+					<label>全选</label>
+				</div>
+				<div class="goods-ifon">
+					商品信息
+				</div>
+				<div class="kbjg"></div>
+				<div class="cart-oneprice">
+					单价
+				</div>
+				<div class="cart-num">
+					数量
+				</div>
+				<div class="cart-price">
+					金额
+				</div>
+				<div class="catr-operate">
+					操作
+				</div>
+			</div>
+			<!--总的订单容器-->
+			<div class="orderItem">
+				<div class="orderItem-top">
+					<div class="checketbox"></div>
+					<div class="stroe-icon"></div>
+					<div class="stroe-name">
+						店铺：美的官方旗舰店
+					</div>
+					<div class="wanwan"></div>
+					<div class="coup"></div>
+				</div>
+				<div class="orderItem-bottom">
+					<ul class="oderitem-lsit">
+						<li>
+							<div class="checketbox"></div>
+							<div class="oderitem-img">
+								<div class="goodspice fl">
+									<a href=""><img src="https://img.alicdn.com/bao/uploaded/i6/TB1BqYxjDnI8KJjSszbuVn4KFXa_031401.jpg_80x80.jpg"/></a>
+								</div>
+								<div class="goodtext fr">
+									<div class="top">
+										<a href="#" target="_blank" title="FILA斐乐男鞋2018春季新款复古跑鞋运动鞋耐磨跑步鞋运动鞋男" class="item-title J_MakePoint" data-point="tbcart.8.11">FILA斐乐男鞋2018春季新款复古跑鞋运动鞋耐磨跑步鞋运动鞋男</a>
+									</div>
+									<div class="bottom">
+										<div class="serviceIcon">
+											<span class="credit">    
+												<a href="javascript:;">        
+													<img src="http://assets.alicdn.com/sys/common/icon/trade/xcard.png">  
+												</a></span><span class="electric">   
+													<a href="javascript:;">       
+														<img src="https://img.alicdn.com/tps/i3/T1bnR4XEBhXXcQVo..-14-16.png"> 
+													</a>
+												</span>     
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="goodsTypeText">
+								<p><span class="typeTitle">颜色分类：</span><span class="typeValue">红色</span></p>
+							</div>
+							<div class="unitprice">
+								 ￥<span>99.01</span>
+							</div>
+							<div class="amout">
+								<div class="countPanel">
+									<span class="reduce">-</span>
+									<input type="text"  value="1" />
+									<span class="reduce">+</span>
+								</div>
+							</div>
+							<div class="amut-price">
+								￥<span>99.01</span>
+							</div>
+							<div class="czzz">
+								<p><a href="#">移入收藏夹</a></p>
+								<p><a href="#">删除</a></p>
+							</div>
+						</li>
+						<li>
+							<div class="checketbox"></div>
+							<div class="oderitem-img">
+								<div class="goodspice fl">
+									<a href=""><img src="https://img.alicdn.com/bao/uploaded/i2/2987102217/TB228feksnI8KJjSsziXXb8QpXa_!!2987102217.jpg_80x80.jpg"/></a>
+								</div>
+								<div class="goodtext fr">
+									<div class="top">
+										<a href="#" target="_blank" title="FILA斐乐男鞋2018春季新款复古跑鞋运动鞋耐磨跑步鞋运动鞋男" class="item-title J_MakePoint" data-point="tbcart.8.11">复古运动鞋ins超火的老爹鞋子男春季网红gd街拍同款鞋情侣休闲鞋</a>
+									</div>
+									<div class="bottom">
+										<div class="serviceIcon">
+											<span class="credit">    
+												<a href="javascript:;">        
+													<img src="http://assets.alicdn.com/sys/common/icon/trade/xcard.png">  
+												</a></span><span class="electric">   
+													<a href="javascript:;">       
+														<img src="https://img.alicdn.com/tps/i3/T1bnR4XEBhXXcQVo..-14-16.png"> 
+													</a>
+												</span>     
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="goodsTypeText">
+								<p><span class="typeTitle">颜色分类：</span><span class="typeValue">红色</span></p>
+							</div>
+							<div class="unitprice">
+								 ￥198
+							</div>
+							<div class="amout">
+								<div class="countPanel">
+									<span class="reduce">-</span>
+									<input type="text"  value="1" />
+									<span class="reduce">+</span>
+								</div>
+							</div>
+							<div class="amut-price">
+								￥99.01
+							</div>
+							<div class="czzz">
+								<p><a href="#">移入收藏夹</a></p>
+								<p><a href="#">删除</a></p>
+							</div>
+						</li>
+						<li>
+							<div class="checketbox"></div>
+							<div class="oderitem-img">
+								<div class="goodspice fl">
+									<a href=""><img src="https://img.alicdn.com/bao/uploaded/i1/2447387346/TB2ENESurlmpuFjSZFlXXbdQXXa_!!2447387346.jpg_80x80.jpg"/></a>
+								</div>
+								<div class="goodtext fr">
+									<div class="top">
+										<a href="#" target="_blank" title="FILA斐乐男鞋2018春季新款复古跑鞋运动鞋耐磨跑步鞋运动鞋男" class="item-title J_MakePoint" data-point="tbcart.8.11">复古运动鞋ins超火的老爹鞋子男春季网红gd街拍同款鞋情侣休闲鞋</a>
+									</div>
+									<div class="bottom">
+										<div class="serviceIcon">
+											<span class="credit">    
+												<a href="javascript:;">        
+													<img src="http://assets.alicdn.com/sys/common/icon/trade/xcard.png">  
+												</a></span><span class="electric">   
+													<a href="javascript:;">       
+														<img src="https://img.alicdn.com/tps/i3/T1bnR4XEBhXXcQVo..-14-16.png"> 
+													</a>
+												</span>     
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="goodsTypeText">
+								<p><span class="typeTitle">颜色分类：</span><span class="typeValue">黑色</span></p>
+							</div>
+							<div class="unitprice">
+								 ￥2000
+							</div>
+							<div class="amout">
+								<div class="countPanel">
+									<span class="reduce">-</span>
+									<input type="text"  value="1" />
+									<span class="reduce">+</span>
+								</div>
+							</div>
+							<div class="amut-price">
+								￥99.01
+							</div>
+							<div class="czzz">
+								<p><a href="#">移入收藏夹</a></p>
+								<p><a href="#">删除</a></p>
+							</div>
+						</li>
+					</ul>
+					
+				
+				</div>
+			</div>
+			<div class="orderItem">
+				<div class="orderItem-top">
+					<div class="checketbox"></div>
+					<div class="stroe-icon"></div>
+					<div class="stroe-name">
+						店铺：NOLO原创潮牌集中
+					</div>
+					<div class="wanwan"></div>
+					<div class="coup"></div>
+				</div>
+				<div class="orderItem-bottom">
+					<ul class="oderitem-lsit">
+						<li>
+							<div class="checketbox"></div>
+							<div class="oderitem-img">
+								<div class="goodspice fl">
+									<a href=""><img src="https://img.alicdn.com/bao/uploaded/i3/59402401/TB24zizXDtYBeNjy1XdXXXXyVXa_!!59402401.png_80x80.jpg"/></a>
+								</div>
+								<div class="goodtext fr">
+									<div class="top">
+										<a href="#" target="_blank" title="FILA斐乐男鞋2018春季新款复古跑鞋运动鞋耐磨跑步鞋运动鞋男" class="item-title J_MakePoint" data-point="tbcart.8.11">FILA斐乐男鞋2018春季新款复古跑鞋运动鞋耐磨跑步鞋运动鞋男</a>
+									</div>
+									<div class="bottom">
+										<div class="serviceIcon">
+											<span class="credit">    
+												<a href="javascript:;">        
+													<img src="http://assets.alicdn.com/sys/common/icon/trade/xcard.png">  
+												</a></span><span class="electric">   
+													<a href="javascript:;">       
+														<img src="https://img.alicdn.com/tps/i3/T1bnR4XEBhXXcQVo..-14-16.png"> 
+													</a>
+												</span>     
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="goodsTypeText">
+								<p><span class="typeTitle">颜色分类：</span><span class="typeValue">红色</span></p>
+							</div>
+							<div class="unitprice">
+								 ￥99.01
+							</div>
+							<div class="amout">
+								<div class="countPanel">
+									<span class="reduce">-</span>
+									<input type="text"  value="1" />
+									<span class="reduce">+</span>
+								</div>
+							</div>
+							<div class="amut-price">
+								￥99.01
+							</div>
+							<div class="czzz">
+								<p><a href="#">移入收藏夹</a></p>
+								<p><a href="#">删除</a></p>
+							</div>
+						</li>
+						<li>
+							<div class="checketbox"></div>
+							<div class="oderitem-img">
+								<div class="goodspice fl">
+									<a href=""><img src="https://img.alicdn.com/bao/uploaded/i2/1719289348/TB2mIduw.hnpuFjSZFpXXcpuXXa_!!1719289348.jpg_80x80.jpg"/></a>
+								</div>
+								<div class="goodtext fr">
+									<div class="top">
+										<a href="#" target="_blank" title="FILA斐乐男鞋2018春季新款复古跑鞋运动鞋耐磨跑步鞋运动鞋男" class="item-title J_MakePoint" data-point="tbcart.8.11">复古运动鞋ins超火的老爹鞋子男春季网红gd街拍同款鞋情侣休闲鞋</a>
+									</div>
+									<div class="bottom">
+										<div class="serviceIcon">
+											<span class="credit">    
+												<a href="javascript:;">        
+													<img src="http://assets.alicdn.com/sys/common/icon/trade/xcard.png">  
+												</a></span><span class="electric">   
+													<a href="javascript:;">       
+														<img src="https://img.alicdn.com/tps/i3/T1bnR4XEBhXXcQVo..-14-16.png"> 
+													</a>
+												</span>     
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="goodsTypeText">
+								<p><span class="typeTitle">颜色分类：</span><span class="typeValue">红色</span></p>
+							</div>
+							<div class="unitprice">
+								 ￥198
+							</div>
+							<div class="amout">
+								<div class="countPanel">
+									<span class="reduce">-</span>
+									<input type="text"  value="1" />
+									<span class="reduce">+</span>
+								</div>
+							</div>
+							<div class="amut-price">
+								￥99.01
+							</div>
+							<div class="czzz">
+								<p><a href="#">移入收藏夹</a></p>
+								<p><a href="#">删除</a></p>
+							</div>
+						</li>
+						<li>
+							<div class="checketbox"></div>
+							<div class="oderitem-img">
+								<div class="goodspice fl">
+									<a href=""><img src="https://img.alicdn.com/bao/uploaded/i3/273166267/TB22LUtfX9gSKJjSspbXXbeNXXa_!!273166267.jpg_80x80.jpg"/></a>
+								</div>
+								<div class="goodtext fr">
+									<div class="top">
+										<a href="#" target="_blank" title="FILA斐乐男鞋2018春季新款复古跑鞋运动鞋耐磨跑步鞋运动鞋男" class="item-title J_MakePoint" data-point="tbcart.8.11">复古运动鞋ins超火的老爹鞋子男春季网红gd街拍同款鞋情侣休闲鞋</a>
+									</div>
+									<div class="bottom">
+										<div class="serviceIcon">
+											<span class="credit">    
+												<a href="javascript:;">        
+													<img src="http://assets.alicdn.com/sys/common/icon/trade/xcard.png">  
+												</a></span><span class="electric">   
+													<a href="javascript:;">       
+														<img src="https://img.alicdn.com/tps/i3/T1bnR4XEBhXXcQVo..-14-16.png"> 
+													</a>
+												</span>     
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="goodsTypeText">
+								<p><span class="typeTitle">颜色分类：</span><span class="typeValue">黑色</span></p>
+							</div>
+							<div class="unitprice">
+								 ￥2000
+							</div>
+							<div class="amout">
+								<div class="countPanel">
+									<span class="reduce">-</span>
+									<input type="text"  value="1" />
+									<span class="reduce">+</span>
+								</div>
+							</div>
+							<div class="amut-price">
+								￥99.01
+							</div>
+							<div class="czzz">
+								<p><a href="#">移入收藏夹</a></p>
+								<p><a href="#">删除</a></p>
+							</div>
+						</li>
+					</ul>
+					
+				
+				</div>
+			</div>
+		</div>
+		<div class="cartFooter">
+			<div class="cartfooter-bd">
+				<div class="checketbox">
+					
+				</div>
+				<ul class="cartfooter-bd-list fl clear">
+					<li><a href="">全选</a></li>
+					<li><a href="">删除</a></li>
+					<li><a href="">移入收藏夹</a></li>
+					<li><a href="">分享</a></li>
+				</ul>
+				<ul class="fr cartfooter-bd-list2">
+					<li>
+						已选商品
+						<span id="goodsCountNum" class="goodsCountNum">0</span>
+						件
+					</li>
+					<li>
+						合计（不含运费）：￥ 
+						<span>0.00</span>
+					</li>
+					<li>
+						<button>结算</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

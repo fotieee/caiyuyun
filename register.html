@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/other.css"/>
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body{
+				font-size: 12px;
+				font-family: "微软雅黑";
+			}
+			fieldset{
+				
+				width: 520px;
+				margin: 0 auto;
+				margin-top:100px;
+			}
+			label{
+				width: 70px;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="tc">
+			<div class="tc-bd">
+				<a class="tc-back">x</a>
+				<button class="tc-agree">同意协议</button>
+			</div>
+		</div>
+		<div class="re-header">
+			<img class="re-header-img" src="images/registertop.png">
+		</div>
+		<fieldset>
+			<legend>用户注册</legend>
+			<form action="./php/reg.php" method="post">
+				<p>
+					<label for="username">用户名：</label>
+					<input type="text" name="username" id="username"/>
+					<span>(必填，3-15字符长度，支持汉字、字母、数字及_)</span>
+				</p>
+				<p>
+					<label for="password">密码：</label>
+					<input type="password" name="password" id="password"/>
+					<span>(必填，不得少于6位)</span>
+				</p>
+				<p>
+					<label for="repass">密码重复：</label>
+					<input type="password" name="repass" id="repass"/>
+					<span></span>
+				</p>
+				<p>
+					<label for="email">邮箱：</label>
+					<input type="text" name="email" id="email"/>
+					<span>(必填)</span>
+				</p>
+				<p>
+					<input type="submit" class="bbbtn" value="注册" name="submit" />
+				</p>
+			</form>
+		</fieldset>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
