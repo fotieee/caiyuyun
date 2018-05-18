@@ -5,8 +5,9 @@ var uglify = require('gulp-uglify');//引入js压缩插件
 var rename = require('gulp-rename');//引入js压缩插件
 var html = require('gulp-minify-html');//引入html压缩插件
 var mcss = require('gulp-minify-css');//引入css压缩插件
-var imagemin = require('gulp-imagemin');//引入img压缩插件
-var sass = require('gulp-sass');//引入sass编译插件
+var connect=require('gulp-connect')//引入自动刷新
+//var imagemin = require('gulp-imagemin');//引入img压缩插件
+//var sass = require('gulp-sass');//引入sass编译插件
 
 
 
@@ -79,16 +80,16 @@ gulp.task('runhtml',function(){
 });
 //5.压缩css文件
 gulp.task('runcss',function(){
-	gulp.src('css/index.css')
+	gulp.src('css/main.css')
 	.pipe(mcss())
 	.pipe(gulp.dest('style/'));
 });
 
 //6.压缩png图片
 gulp.task('runimg',function(){
-	gulp.src('img/*')
+	gulp.src('imgages/*')
 	.pipe(imagemin())
-	.pipe(gulp.dest('images/'));
+	.pipe(gulp.dest('im/'));
 });
 
 //7.编译sass
@@ -105,7 +106,7 @@ gulp.task('watchsass',function(){
 
 
 //同时执行多个任务
-gulp.task('default',['jshint','alljs','runsass','warchsass']);
+//gulp.task('default',['runcss']);
 
 
 
@@ -141,17 +142,17 @@ gulp.task('connect',function(){//新建一个任务
 });
 
 gulp.task('html',function(){
-	gulp.src(['index.html','css/*.css','js/new_file.js'])//引入的文件路径
+	gulp.src(['index.html','css/*.css','js/*.js'])//引入的文件路径
 	.pipe(connect.reload());//自动刷新的方法
 });
 
 gulp.task('watch',function(){//监听
-	gulp.watch(['index.html','css/*.css','js/new_file.js'],['html']);
+	gulp.watch(['index.html','css/*.css','js/*.js'],['html']);
 });
 
 
 //执行的任务
-//gulp.task('default',['connect','watch','runsass']);
+gulp.task('default',['connect','watch']);
 
 
 

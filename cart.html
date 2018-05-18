@@ -28,7 +28,7 @@
 					</p>
 					<ul class="qucik-menu">
 						<li class="sen-mytaobao">
-							<a href="#">
+							<a href="index.html">
 								我的淘宝
 								<b class="triangle "></b>
 							</a>
@@ -63,7 +63,7 @@
 							<div class="squict"></div>
 						</li>
 						<li>
-							<a href="#">淘宝网</a>
+							<a href="index.html">淘宝网</a>
 						</li>
 						
 						<li class="sen-zc">
@@ -157,6 +157,11 @@
 		<div class="ooo">
 			<img src="images/cart.png"/>
 		</div>
+		<!--cookie没有商品想显示的盒子-->
+		<div class="kong">
+				     购物车空空的哦~，去看看心仪的商品吧~
+				     <a href="index.html">去购物</a>
+			</div>
 		<div class="catr-main">
 			<div class="cart-header">
 				<div class="allselect">
@@ -182,6 +187,7 @@
 					操作
 				</div>
 			</div>
+			
 			<!--总的订单容器-->
 			<div class="orderItem">
 				<div class="orderItem-top">
@@ -195,7 +201,7 @@
 				</div>
 				<div class="orderItem-bottom">
 					<ul class="oderitem-lsit">
-						<li>
+						<li style="display: none;">
 							<div class="checketbox"></div>
 							<div class="oderitem-img">
 								<div class="goodspice fl">
@@ -229,7 +235,7 @@
 								<div class="countPanel">
 									<span class="reduce">-</span>
 									<input type="text"  value="1" />
-									<span class="reduce">+</span>
+									<span class="addd">+</span>
 								</div>
 							</div>
 							<div class="amut-price">
@@ -237,10 +243,10 @@
 							</div>
 							<div class="czzz">
 								<p><a href="#">移入收藏夹</a></p>
-								<p><a href="#">删除</a></p>
+								<p><a class="delected" href="#">删除</a></p>
 							</div>
 						</li>
-						<li>
+						<!--<li>
 							<div class="checketbox"></div>
 							<div class="oderitem-img">
 								<div class="goodspice fl">
@@ -268,23 +274,24 @@
 								<p><span class="typeTitle">颜色分类：</span><span class="typeValue">红色</span></p>
 							</div>
 							<div class="unitprice">
-								 ￥198
+								 ￥<span>198</span>
 							</div>
 							<div class="amout">
 								<div class="countPanel">
 									<span class="reduce">-</span>
 									<input type="text"  value="1" />
-									<span class="reduce">+</span>
+									<span class="addd">+</span>
 								</div>
 							</div>
 							<div class="amut-price">
-								￥99.01
+								￥<span>99.01</span>
 							</div>
 							<div class="czzz">
 								<p><a href="#">移入收藏夹</a></p>
 								<p><a href="#">删除</a></p>
 							</div>
-						</li>
+						</li>-->
+						<!--
 						<li>
 							<div class="checketbox"></div>
 							<div class="oderitem-img">
@@ -313,189 +320,37 @@
 								<p><span class="typeTitle">颜色分类：</span><span class="typeValue">黑色</span></p>
 							</div>
 							<div class="unitprice">
-								 ￥2000
+								 ￥<span>2000</span>
 							</div>
 							<div class="amout">
 								<div class="countPanel">
 									<span class="reduce">-</span>
 									<input type="text"  value="1" />
-									<span class="reduce">+</span>
+									<span class="addd">+</span>
 								</div>
 							</div>
 							<div class="amut-price">
-								￥99.01
+								￥<span>99.01</span>
 							</div>
 							<div class="czzz">
 								<p><a href="#">移入收藏夹</a></p>
 								<p><a href="#">删除</a></p>
 							</div>
-						</li>
-					</ul>
-					
-				
-				</div>
-			</div>
-			<div class="orderItem">
-				<div class="orderItem-top">
-					<div class="checketbox"></div>
-					<div class="stroe-icon"></div>
-					<div class="stroe-name">
-						店铺：NOLO原创潮牌集中
-					</div>
-					<div class="wanwan"></div>
-					<div class="coup"></div>
-				</div>
-				<div class="orderItem-bottom">
-					<ul class="oderitem-lsit">
-						<li>
-							<div class="checketbox"></div>
-							<div class="oderitem-img">
-								<div class="goodspice fl">
-									<a href=""><img src="https://img.alicdn.com/bao/uploaded/i3/59402401/TB24zizXDtYBeNjy1XdXXXXyVXa_!!59402401.png_80x80.jpg"/></a>
-								</div>
-								<div class="goodtext fr">
-									<div class="top">
-										<a href="#" target="_blank" title="FILA斐乐男鞋2018春季新款复古跑鞋运动鞋耐磨跑步鞋运动鞋男" class="item-title J_MakePoint" data-point="tbcart.8.11">FILA斐乐男鞋2018春季新款复古跑鞋运动鞋耐磨跑步鞋运动鞋男</a>
-									</div>
-									<div class="bottom">
-										<div class="serviceIcon">
-											<span class="credit">    
-												<a href="javascript:;">        
-													<img src="http://assets.alicdn.com/sys/common/icon/trade/xcard.png">  
-												</a></span><span class="electric">   
-													<a href="javascript:;">       
-														<img src="https://img.alicdn.com/tps/i3/T1bnR4XEBhXXcQVo..-14-16.png"> 
-													</a>
-												</span>     
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="goodsTypeText">
-								<p><span class="typeTitle">颜色分类：</span><span class="typeValue">红色</span></p>
-							</div>
-							<div class="unitprice">
-								 ￥99.01
-							</div>
-							<div class="amout">
-								<div class="countPanel">
-									<span class="reduce">-</span>
-									<input type="text"  value="1" />
-									<span class="reduce">+</span>
-								</div>
-							</div>
-							<div class="amut-price">
-								￥99.01
-							</div>
-							<div class="czzz">
-								<p><a href="#">移入收藏夹</a></p>
-								<p><a href="#">删除</a></p>
-							</div>
-						</li>
-						<li>
-							<div class="checketbox"></div>
-							<div class="oderitem-img">
-								<div class="goodspice fl">
-									<a href=""><img src="https://img.alicdn.com/bao/uploaded/i2/1719289348/TB2mIduw.hnpuFjSZFpXXcpuXXa_!!1719289348.jpg_80x80.jpg"/></a>
-								</div>
-								<div class="goodtext fr">
-									<div class="top">
-										<a href="#" target="_blank" title="FILA斐乐男鞋2018春季新款复古跑鞋运动鞋耐磨跑步鞋运动鞋男" class="item-title J_MakePoint" data-point="tbcart.8.11">复古运动鞋ins超火的老爹鞋子男春季网红gd街拍同款鞋情侣休闲鞋</a>
-									</div>
-									<div class="bottom">
-										<div class="serviceIcon">
-											<span class="credit">    
-												<a href="javascript:;">        
-													<img src="http://assets.alicdn.com/sys/common/icon/trade/xcard.png">  
-												</a></span><span class="electric">   
-													<a href="javascript:;">       
-														<img src="https://img.alicdn.com/tps/i3/T1bnR4XEBhXXcQVo..-14-16.png"> 
-													</a>
-												</span>     
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="goodsTypeText">
-								<p><span class="typeTitle">颜色分类：</span><span class="typeValue">红色</span></p>
-							</div>
-							<div class="unitprice">
-								 ￥198
-							</div>
-							<div class="amout">
-								<div class="countPanel">
-									<span class="reduce">-</span>
-									<input type="text"  value="1" />
-									<span class="reduce">+</span>
-								</div>
-							</div>
-							<div class="amut-price">
-								￥99.01
-							</div>
-							<div class="czzz">
-								<p><a href="#">移入收藏夹</a></p>
-								<p><a href="#">删除</a></p>
-							</div>
-						</li>
-						<li>
-							<div class="checketbox"></div>
-							<div class="oderitem-img">
-								<div class="goodspice fl">
-									<a href=""><img src="https://img.alicdn.com/bao/uploaded/i3/273166267/TB22LUtfX9gSKJjSspbXXbeNXXa_!!273166267.jpg_80x80.jpg"/></a>
-								</div>
-								<div class="goodtext fr">
-									<div class="top">
-										<a href="#" target="_blank" title="FILA斐乐男鞋2018春季新款复古跑鞋运动鞋耐磨跑步鞋运动鞋男" class="item-title J_MakePoint" data-point="tbcart.8.11">复古运动鞋ins超火的老爹鞋子男春季网红gd街拍同款鞋情侣休闲鞋</a>
-									</div>
-									<div class="bottom">
-										<div class="serviceIcon">
-											<span class="credit">    
-												<a href="javascript:;">        
-													<img src="http://assets.alicdn.com/sys/common/icon/trade/xcard.png">  
-												</a></span><span class="electric">   
-													<a href="javascript:;">       
-														<img src="https://img.alicdn.com/tps/i3/T1bnR4XEBhXXcQVo..-14-16.png"> 
-													</a>
-												</span>     
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="goodsTypeText">
-								<p><span class="typeTitle">颜色分类：</span><span class="typeValue">黑色</span></p>
-							</div>
-							<div class="unitprice">
-								 ￥2000
-							</div>
-							<div class="amout">
-								<div class="countPanel">
-									<span class="reduce">-</span>
-									<input type="text"  value="1" />
-									<span class="reduce">+</span>
-								</div>
-							</div>
-							<div class="amut-price">
-								￥99.01
-							</div>
-							<div class="czzz">
-								<p><a href="#">移入收藏夹</a></p>
-								<p><a href="#">删除</a></p>
-							</div>
-						</li>
+						</li>-->
 					</ul>
 					
 				
 				</div>
 			</div>
 		</div>
+		
+		<!--结算-->
 		<div class="cartFooter">
 			<div class="cartfooter-bd">
-				<div class="checketbox">
-					
-				</div>
+				
 				<ul class="cartfooter-bd-list fl clear">
-					<li><a href="">全选</a></li>
-					<li><a href="">删除</a></li>
+					
+					<li><a class="all-remove" href="">全部删除</a></li>
 					<li><a href="">移入收藏夹</a></li>
 					<li><a href="">分享</a></li>
 				</ul>
@@ -507,13 +362,83 @@
 					</li>
 					<li>
 						合计（不含运费）：￥ 
-						<span>0.00</span>
+						<span class="allmo">0.00</span>
 					</li>
 					<li>
 						<button>结算</button>
 					</li>
 				</ul>
 			</div>
+		</div>
+		<div class="cart-last">
+			
+			<!--<ul class="cart-last-list">
+				<li>
+					<div class="last-img">
+						<img src="https:////img.alicdn.com/bao/uploaded/bao/upload/TB1R1YESFXXXXcUXFXXwu0bFXXX.png_400x400q60.jpg">
+					</div>
+					<div class="last-title">
+						<div>国行正品 Apple/苹果MacBook Air笔记本电脑13.3英寸轻薄便携QD32</div>
+					</div>	
+					<div class="last-price">
+						<div>
+							¥<span>4999</span>
+						</div>
+					</div>
+					<div class="cart-join">
+						<button>加入购物车</button>
+					</div>
+				</li>
+				<li>
+					<div class="last-img">
+						<img src="https:////img.alicdn.com/bao/uploaded/bao/upload/TB1R1YESFXXXXcUXFXXwu0bFXXX.png_400x400q60.jpg">
+					</div>
+					<div class="last-title">
+						<div>国行正品 Apple/苹果MacBook Air笔记本电脑13.3英寸轻薄便携QD32</div>
+					</div>	
+					<div class="last-price">
+						<div>
+							¥<span>4999</span>
+						</div>
+					</div>
+					<div class="cart-join">
+						<button>加入购物车</button>
+					</div>
+				</li>
+				<li>
+					<div class="last-img">
+						<img src="https:////img.alicdn.com/bao/uploaded/bao/upload/TB1R1YESFXXXXcUXFXXwu0bFXXX.png_400x400q60.jpg">
+					</div>
+					<div class="last-title">
+						<div>国行正品 Apple/苹果MacBook Air笔记本电脑13.3英寸轻薄便携QD32</div>
+					</div>	
+					<div class="last-price">
+						<div>
+							¥<span>4999</span>
+						</div>
+					</div>
+					<div class="cart-join">
+						<button>加入购物车</button>
+					</div>
+				</li>
+				<li>
+					<div class="last-img">
+						<img src="https:////img.alicdn.com/bao/uploaded/bao/upload/TB1R1YESFXXXXcUXFXXwu0bFXXX.png_400x400q60.jpg">
+					</div>
+					<div class="last-title">
+						<div>国行正品 Apple/苹果MacBook Air笔记本电脑13.3英寸轻薄便携QD32</div>
+					</div>	
+					<div class="last-price">
+						<div>
+							¥<span>4999</span>
+						</div>
+					</div>
+					<div class="cart-join">
+						<button>加入购物车</button>
+					</div>
+				</li>
+			</ul>-->
+			
 		</div>
 		<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
 	</body>

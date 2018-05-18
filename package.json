@@ -9,9 +9,11 @@
   "author": "zhangsan",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0"
   },
   "devDependencies": {
+    "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.6.1",
     "gulp-jshint": "^2.1.0",
     "gulp-jshint-html-reporter": "^0.1.3",
